@@ -43,5 +43,4 @@ def send_photo(message):
 def echo_all(message):
     bot.reply_to(message, message.text)
 
-
 bot.polling()
