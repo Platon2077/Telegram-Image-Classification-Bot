@@ -5,7 +5,7 @@ from bot_logic2 import gen_word
 
 # Замени 'TOKEN' на токен твоего бота
 # Этот токен ты получаешь от BotFather, чтобы бот мог работать
-bot = telebot.TeleBot("7287636434:AAFiKGvrN7wcyeAPRw2tmYS44T5jU0usmHM")
+bot = telebot.TeleBot("")
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
@@ -42,5 +42,6 @@ def send_photo(message):
 @bot.message_handler(func=lambda message: True)
 def echo_all(message):
     bot.reply_to(message, message.text)
+
 
 bot.polling()
